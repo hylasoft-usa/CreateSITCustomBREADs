@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FDC0845-0AC1-4E07-BE5C-D6EE857A849C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIT.Libs.Base</RootNamespace>
+    <AssemblyName>SIT.Libs.Base</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>bin\Debug\SIT.Libs.Base.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SIT.Libs.Base.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BreadBase, Version=6.3.2.0, Culture=neutral, PublicKeyToken=c0f6ca1d08084ae8, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Siemens\SIT\MES\BIN\BreadBase.dll</HintPath>
+    </Reference>
+    <Reference Include="SITCAB.BREADAttributes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a25dddb5f077262e, processorArchitecture=x86" />
+    <Reference Include="SITCAB.Common, Version=6.5.0.0, Culture=neutral, PublicKeyToken=a25dddb5f077262e, processorArchitecture=MSIL" />
+    <Reference Include="SITCAB.Framework, Version=6.5.0.0, Culture=neutral, PublicKeyToken=a25dddb5f077262e, processorArchitecture=MSIL" />
+    <Reference Include="SITCAB.Framework.Core, Version=6.5.0.0, Culture=neutral, PublicKeyToken=a25dddb5f077262e, processorArchitecture=MSIL" />
+    <Reference Include="SITCAB.StorageConnectionProvider, Version=6.5.0.0, Culture=neutral, PublicKeyToken=a25dddb5f077262e, processorArchitecture=MSIL" />
+    <Reference Include="SITFndLEAN, Version=1.0.8.0, Culture=neutral, PublicKeyToken=a25dddb5f077262e, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Siemens\SIT\BIN\SITFndLEAN.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CAB\Web\Controls\ConfirmButton.cs" />
+    <Compile Include="CAB\Web\Controls\ConfirmImageButton.cs" />
+    <Compile Include="CAB\Web\Controls\ConfirmLinkButton.cs" />
+    <Compile Include="CAB\Web\Controls\ContextMenu\Collection.cs" />
+    <Compile Include="CAB\Web\Controls\ContextMenu\ContextMenu.cs" />
+    <Compile Include="CAB\Web\Controls\ContextMenu\Design\ContextMenuDesigner.cs" />
+    <Compile Include="CAB\Web\Controls\ContextMenu\Events\Events.cs" />
+    <Compile Include="CAB\Web\Controls\DatePickerTextBox\DatePickerTextBox.cs" />
+    <Compile Include="CAB\Web\Controls\DatePickerTextBox\Design\DatePickerTextBoxDesigner.cs" />
+    <Compile Include="CAB\Web\Controls\ExtendedDropDownList\ExtendedDropDownList.cs" />
+    <Compile Include="CAB\Web\Controls\ExtendedGridView\ExtendedGridView.cs" />
+    <Compile Include="CAB\Web\Controls\ExtendedGridView\ExtendedGridView.Helpers.cs" />
+    <Compile Include="CAB\Web\Controls\ExtendedGridView\InputCheckBoxField.cs" />
+    <Compile Include="CAB\Web\Controls\Images\CustomImage.cs" />
+    <Compile Include="CAB\Web\Controls\Images\CustomImageButton.cs" />
+    <Compile Include="CAB\Web\Controls\Popup\Design\PopupDesigner.cs" />
+    <Compile Include="CAB\Web\Controls\Popup\Enumerations\PopupPosition.cs" />
+    <Compile Include="CAB\Web\Controls\Popup\Events\Events.cs" />
+    <Compile Include="CAB\Web\Controls\Popup\Popup.cs" />
+    <Compile Include="CAB\Web\Controls\Popup\PopupButton.cs" />
+    <Compile Include="CAB\Web\Controls\Popup\PopupButtonsCollection.cs" />
+    <Compile Include="CAB\Web\Controls\ProgressBar\Design\WebProgressBarDesigner.cs" />
+    <Compile Include="CAB\Web\Controls\ProgressBar\WebProgressBar.cs" />
+    <Compile Include="CAB\Web\Controls\TermIDStatusChecker.cs" />
+    <Compile Include="CAB\Web\Controls\TerminalsManagement\TerminalsManagement.cs" />
+    <Compile Include="CAB\Web\Exceptions.cs" />
+    <Compile Include="CAB\Web\UI\CABBaseContentPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CAB\Web\WebEnvironment.cs" />
+    <Compile Include="Data\BREADs\BaseSITBREAD.cs" />
+    <Compile Include="Data\BREADs\BREADsFactory.cs" />
+    <Compile Include="DB\DBGateway.cs" />
+    <Compile Include="Localizations.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localizations.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CAB\Web\Controls\Images\calendar.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\error.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\GreenDot.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\iconHelp.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\iconInfo.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\iconRefresh.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\info.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\loading.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\RedDot.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\siemens-logo.jpg" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\spinner.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\warning.gif" />
+    <EmbeddedResource Include="CAB\Web\Controls\Images\question.png" />
+    <Content Include="CAB\Web\Controls\WebControlsScripts\ContextMenu.js" />
+    <Content Include="CAB\Web\Controls\WebControlsScripts\CountDownProgressBar.js" />
+    <Content Include="CAB\Web\Controls\WebControlsScripts\ExtendedGridView.js" />
+    <Content Include="Resources\BlockContextMenuScript.js" />
+    <Content Include="Resources\KeepSessionAliveScript.js" />
+    <Content Include="Resources\KillKeyboardShortcutsScript.js" />
+    <Content Include="Resources\ManageObscuringLayerScriptSqlServer.js" />
+    <Content Include="Resources\ManageObscuringLayerScriptWebServer.js" />
+    <Content Include="Resources\SubmitPageAfterScript.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localizations.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localizations.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\CommonPlatform\CommonPlatform.csproj">
+      <Project>{e7c6519a-f06a-4108-8d59-2af319da0f60}</Project>
+      <Name>CommonPlatform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\ExtensionMethods\ExtensionMethods.csproj">
+      <Project>{823da664-aba1-4006-b298-9697d4a269bc}</Project>
+      <Name>ExtensionMethods</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\HelperMethods\HelperMethods.csproj">
+      <Project>{267BEA3C-8690-4328-BCBF-A1E32E196272}</Project>
+      <Name>HelperMethods</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SITHelperMethods\SITHelperMethods.csproj">
+      <Project>{20C23FEF-FEB7-452C-81C8-37E27A3F85CE}</Project>
+      <Name>SITHelperMethods</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CAB\Web\Controls\DatePickerTextBox\DatePickerTextBox\Design\" />
+    <Folder Include="CAB\Web\Controls\ExtendedDropDownList\ExtendedDropDownList\" />
+    <Folder Include="CAB\Web\Controls\ExtendedGridView\ExtendedGridView\" />
+    <Folder Include="CAB\Web\Controls\Popup\Popup\Design\" />
+    <Folder Include="CAB\Web\Controls\Popup\Popup\Enumerations\" />
+    <Folder Include="CAB\Web\Controls\Popup\Popup\Events\" />
+    <Folder Include="CAB\Web\Controls\ProgressBar\ProgressBar\Design\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SIT.Libs.Base.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
